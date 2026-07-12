@@ -1,6 +1,6 @@
 //Jennifer Frei - 1405501
 //CS85 Section 1234
-//Module 5
+//Module 5 - Vehicle Search
 
 <?php
 class CarFinder {
@@ -49,6 +49,20 @@ class CarFinder {
             return true;
         }
         return false;
+    }
+
+    /* AI Method - Average Miles Per Year
+    Calculaes the historical annual mileage of the vehicle
+    to establish a usage bseline for future wear predicitons.
+    */
+    public function getAverageMilesPerYear() {
+        $currentYear = 2026;
+        $age = $currentYear - $this->year;
+
+        if ($age <= 0) {
+            $age = 1;
+        }
+        return $this->mileage / $age;
     }
 }
 ?>
