@@ -38,8 +38,9 @@ class CarFinder {
     }
 
     //Change Property Value
-    public function() {
-        
+    public function negotiatePrice($offeredPrice) {
+        $this->price = $offeredPrice;
+        return "New negotiated price set to: $ " . number_format($this->price);
     }
 
     //Decision Logic
