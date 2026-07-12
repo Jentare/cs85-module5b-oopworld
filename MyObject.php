@@ -19,17 +19,25 @@ class CarFinder {
         $this->price = $price;
     }
 
-    //Summary Dislay
-
+    //Summary Display
+    public function getListingSummary() {
+        return "Listing: " . $this->year . " " . $this->make . " " . $this->model . " with " . number_format($this->mileage) . " miles. Price: $" . number_format($this->price);
+    }
 
     //Calculate Value
-
+    public function() {
+        
+    }
 
     //Change Property Value
-
+    public function() {
+        
+    }
 
     //Decision Logic
-
+    public function() {
+        
+    }
 
 }
 ?>
