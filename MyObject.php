@@ -25,8 +25,16 @@ class CarFinder {
     }
 
     //Calculate Value
-    public function() {
-        
+    public function calculateDepreciatedValue() {
+        //Assuming a standard depreciation rate of 15 cents per mile driven
+        $mileageDepreciation = $this->mileage * 0.15;
+        //current value
+        $currentValue = $this->price - $mileageDepreciation;
+        //If under $500
+        if ($currentValue < 500) {
+            $currentValue = 500;
+        }
+        return $currentValue;
     }
 
     //Change Property Value
