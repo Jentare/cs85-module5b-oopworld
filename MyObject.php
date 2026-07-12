@@ -10,7 +10,7 @@ class CarFinder {
     public $mileage;
     public $price;
     
-    // 
+    //Constructor
     public function __construct($year, $make, $model, $mileage, $price) {
         $this->year = $year;
         $this->make = $make;
@@ -18,6 +18,18 @@ class CarFinder {
         $this->mileage = $mileage;
         $this->price = $price;
     }
+
+    //Summary Dislay
+
+
+    //Calculate Value
+
+
+    //Change Property Value
+
+
+    //Decision Logic
+
 
 }
 ?>
