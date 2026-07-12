@@ -44,9 +44,11 @@ class CarFinder {
     }
 
     //Decision Logic
-    public function() {
-        
+    public function isTargetVehicle() {
+        if(strtoupper($this->model) === "RX350" || strtoupper($this->model) === "RAV4" || strtoupper($this->model) === "HIGHLANDER" || strtoupper($this->model) === "CR-V") {
+            return true;
+        }
+        return false;
     }
-
 }
 ?>
